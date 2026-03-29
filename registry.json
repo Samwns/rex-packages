@@ -12,6 +12,15 @@
       "include": "include",
       "author": "rex-community",
       "license": "MIT"
+    },
+        {
+      "name": "termcolor",
+      "version": "1.0.0",
+      "description": "Lightweight ANSI terminal color and style library for C++ — colorize your output with ease",
+      "path": "packages/termcolor",
+      "include": "include",
+      "author": "Samns",
+      "license": "MIT"
     }
   ]
 }

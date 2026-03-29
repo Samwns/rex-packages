@@ -1,0 +1,10 @@
+{
+  "name": "termcolor",
+  "version": "1.0.0",
+  "description": "Lightweight ANSI terminal color and style library for C++ — colorize your output with ease",
+  "language": "cpp",
+  "author": "Samns",
+  "license": "MIT",
+  "include": "include",
+  "dependencies": {}
+}

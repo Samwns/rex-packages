@@ -1,0 +1,12 @@
+{
+  "registry": "rex-packages",
+  "version": "1.0.0",
+  "packages": [
+    {
+      "name": "mathlib",
+      "version": "1.0.0",
+      "description": "Simple math utilities",
+      "path": "packages/mathlib"
+    }
+  ]
+}

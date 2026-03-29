@@ -1,6 +1,10 @@
 {
   "name": "mathlib",
   "version": "1.0.0",
-  "description": "Simple math utilities",
+  "description": "Simple math utilities for C++ projects",
+  "language": "cpp",
+  "author": "rex-community",
+  "license": "MIT",
+  "include": "include",
   "dependencies": {}
 }

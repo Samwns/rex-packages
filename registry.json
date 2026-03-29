@@ -1,12 +1,17 @@
 {
   "registry": "rex-packages",
   "version": "1.0.0",
+  "language": "cpp",
+  "schema": "schema/rex-package.schema.json",
   "packages": [
     {
       "name": "mathlib",
       "version": "1.0.0",
-      "description": "Simple math utilities",
-      "path": "packages/mathlib"
+      "description": "Simple math utilities for C++ projects",
+      "path": "packages/mathlib",
+      "include": "include",
+      "author": "rex-community",
+      "license": "MIT"
     }
   ]
 }

@@ -1,0 +1,51 @@
+{
+  "$schema": "http://json-schema.org/draft-07/schema#",
+  "title": "rex.json",
+  "description": "Metadata schema for a REX C++ package",
+  "type": "object",
+  "required": ["name", "version", "description", "language"],
+  "properties": {
+    "name": {
+      "type": "string",
+      "pattern": "^[a-z][a-z0-9-]*$",
+      "description": "Unique package name (lowercase letters, numbers, and hyphens)"
+    },
+    "version": {
+      "type": "string",
+      "pattern": "^\\d+\\.\\d+\\.\\d+$",
+      "description": "Semantic version (MAJOR.MINOR.PATCH)"
+    },
+    "description": {
+      "type": "string",
+      "minLength": 1,
+      "description": "Short description of the package"
+    },
+    "language": {
+      "type": "string",
+      "enum": ["cpp"],
+      "description": "Programming language (must be cpp)"
+    },
+    "author": {
+      "type": "string",
+      "description": "Package author or maintainer"
+    },
+    "license": {
+      "type": "string",
+      "description": "License identifier (e.g. MIT, Apache-2.0)"
+    },
+    "include": {
+      "type": "string",
+      "default": "include",
+      "description": "Directory containing public headers (relative to package root)"
+    },
+    "dependencies": {
+      "type": "object",
+      "additionalProperties": {
+        "type": "string",
+        "pattern": "^\\d+\\.\\d+\\.\\d+$"
+      },
+      "description": "Map of package names to required versions"
+    }
+  },
+  "additionalProperties": false
+}
